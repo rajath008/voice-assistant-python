@@ -11,3 +11,8 @@ def getReminder():
     msg=remind.read()
     remind.close()
     return(f"I remember that {msg}")
+
+def deleteReminder():
+    remind=open("reminder.txt","w")
+    remind.truncate(0)
+    remind.close()

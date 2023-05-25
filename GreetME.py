@@ -13,7 +13,7 @@ def speak(audio):
 
 def greetMe():
     hour=int(datetime.datetime.now().hour)
-    if hour>=0 and hour<=12:
+    if hour>=5 and hour<=12:
         speak("Good Morning ,Sir")
     elif hour>12 and hour<=17:
         speak("Good Afternoon ,Sir")
